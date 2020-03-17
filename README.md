@@ -26,7 +26,9 @@ All the stored -bam files for each individual are de imput to obtain GENOTYPE PO
  This command requires two files, sorted_bams and mapping.txt, both containing exactly one line listing the file names for sorted bams and individual names, respectively and in the same order. If the data of each individual is in its own bam, then the files can be same (but it is more clear to remove the bam suffix from the individual names). Please note that this pipeline does not work with the old version of samtools (0.X).
 
 For example (3 individuals in 4 bams):
+
 sorted_bams: 1.bam 1a.bam 2.bam 3.bam
+
 mapping.txt: 1 1 2 3
 
  ### The next step is calculate the IBD values between all pair-wise individuals. Input from above script
