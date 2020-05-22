@@ -17,13 +17,13 @@ In this repository you can find the pipeline to calculate identity by descent (I
 
 ### The sequencing data processing pipeline for Lep-MAP3 is based on "SAMtools mpileup" and custom scripts. This scripts can be found in https://sourceforge.net/p/lep-map3/wiki/LM3%20Home/#ibd YOU CAN ALSO FIND DOCUMENTATION TO INSTALL Lep-MAP3 there
 
-pileupParser2.awk and pileup2posterior.awk, provided in scripts.zip. The usage is
+pileupParser2.awk and pileup2posterior.awk, provided in scripts.zip (also provided in this tutorial). The usage is
 
 All the stored -bam files for each individual are de imput to obtain GENOTYPE POSTERIOR PROBABILITIES 
 
     samtools mpileup -q 10 -Q 10 -s $(cat sorted_bams)|awk -f pileupParser2.awk|awk -f pileup2posterior.awk|gzip >post.gz
 
- This command requires two files, sorted_bams and mapping.txt, both containing exactly one line listing the file names for sorted bams and individual names, respectively and in the same order. If the data of each individual is in its own bam, then the files can be same (but it is more clear to remove the bam suffix from the individual names). Please note that this pipeline does not work with the old version of samtools (0.X).
+ This command requires two files, sorted_bams and mapping.txt, both containing exactly one line listing the file names for sorted bams and individual names, respectively and in the same order. If the data of each individual is in its own bam, then the files can be same (but it is more clear to remove the bam suffix from the individual names). Please note that this pipeline does not work with the old version of samtools (0.X). An example is provided in this tutorial. 
 
 For example (3 individuals in 4 bams):
 
