@@ -1,10 +1,11 @@
 # IBDcalculation
 In this repository you can find the pipeline to calculate identity by descent (IBD) from paper: Local adaptation driven by herbivore-imposed natural selection in *Datura stramonium*: genetic and chemical evidence *De-la-Cruz et al. in prep.* 
 
-# Programs
+## Programs
    1. Lep-MAP3
    2. Samtools
    3. BWA
+   4. awk
    
 ### The first step after trimming bad sequences is align all the individuals to reference genomes. This can be achieved using BWA program
 
