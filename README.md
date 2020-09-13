@@ -1,5 +1,5 @@
 # IBDcalculation
-In this repository you can find the pipeline to calculate identity by descent (IBD) from paper: Genomic and chemical evidence for local adaptation in resistance to different herbivores in Datura stramonium by *De-la-Cruz et al. 2020* 
+In this repository you can find the pipeline to calculate identity by descent (IBD) from paper: Genomic and chemical evidence for local adaptation in resistance to different herbivores in *Datura stramonium* by *De-la-Cruz et al. 2020* 
 
    Rad-seq data is available in GenBank under the Bioproject "comming soon"
 
