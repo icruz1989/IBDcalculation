@@ -43,10 +43,5 @@ mapping.txt: 1 1 2 3
   
     zcat post_from_pipeline_above.gz|awk '{if (NR==1) {print;print;print;print;print}; print}'|java IBD data=- >ibd.txt
 
- ### One program has finished jus use this command line to obtain relatedness to a potential parent
- 
-    sort -n -r -k 3,3  ibd.txt|grep -w possible_parent|less
-
-That's all and Enjoy
 
 imda@ecologia.unam.mx
