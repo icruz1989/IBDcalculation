@@ -42,6 +42,11 @@ mapping.txt: 1 1 2 3
  ### The next step is calculate the IBD values between all pair-wise individuals. Input from above script
   
     zcat post_from_pipeline_above.gz|awk '{if (NR==1) {print;print;print;print;print}; print}'|java IBD data=- >ibd.txt
+ 
+ ### relatedness to a potential parent
+
+    sort -n -r -k 3,3  ibd.txt|grep -w possible_parent|less
+
 
 
 imda@ecologia.unam.mx
